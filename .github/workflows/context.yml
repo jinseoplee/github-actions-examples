@@ -1,0 +1,16 @@
+name: context
+on: push
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show actor
+        run: echo "${{ github.actor }}"
+
+      - name: Show repository and ref
+        run: |
+          echo "Repository: ${{ github.repository }}"
+          echo "Ref: ${{ github.ref }}"
+
+      - name: Show commit SHA
+        run: echo "Commit SHA: ${{ github.sha }}"
