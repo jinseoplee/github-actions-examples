@@ -1,7 +1,7 @@
 name: hello
 on: push
 jobs:
-  hello:
-    runs-on: unbuntu-latest
+  run:
+    runs-on: ubuntu-latest
     steps:
       - run: echo "Hello world"
