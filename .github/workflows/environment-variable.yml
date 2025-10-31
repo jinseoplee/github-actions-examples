@@ -6,4 +6,4 @@ jobs:
     env:
       ENV: development
     steps:
-      - run: ehco "${ENV}"
+      - run: echo "${ENV}"
