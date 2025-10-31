@@ -1,7 +1,7 @@
-name: hello # 워크플로명
-on: push # 이벤트
-jobs: # 잡 정의
-    hello: # 잡 이름
-        runs-on: ubuntu-latest # 실행 환경
-        steps:
-            - run: echo "Hello World" # 쉘 명령 실행
+name: hello
+on: push
+jobs:
+  hello:
+    runs-on: unbuntu-latest
+    steps:
+      - run: echo "Hello world"
