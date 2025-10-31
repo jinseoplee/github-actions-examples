@@ -1,0 +1,9 @@
+name: environment variable
+on: push
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      ENV: development
+    steps:
+      - run: ehco "${ENV}"
